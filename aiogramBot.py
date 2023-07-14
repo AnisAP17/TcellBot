@@ -9,5 +9,7 @@ dp = Dispatcher(bot)
 async def echo_bot(message: types.Message):
     await message.answer(message.text)
 
+print("new branch")
+
 if __name__ == "__main__":
     executor.start_polling(dp, skip_updates=True)
